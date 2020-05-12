@@ -1,0 +1,19 @@
+version = 1
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "github.com/github/linguist"
+
+[[analyzers]]
+name = "docker"
+enabled = true
+
+  [analyzers.meta]
+  dockerfile_paths = ["tools/grammar/Dockerfile"]
+
+[[analyzers]]
+name = "ruby"
+enabled = true
